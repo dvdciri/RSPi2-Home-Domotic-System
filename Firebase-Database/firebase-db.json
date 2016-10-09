@@ -1,0 +1,77 @@
+{
+  "Controls" : {
+    "Blinds" : {
+      "Kitchen" : {
+        "icon" : "https://cdn0.iconfinder.com/data/icons/home-furniture-2/128/_double_window-512.png",
+        "pin_number" : 15,
+        "value" : 0
+      },
+      "Livingroom" : {
+        "icon" : "https://cdn0.iconfinder.com/data/icons/home-furniture-2/128/_double_window-512.png",
+        "pin_number" : 19,
+        "value" : 1
+      }
+    },
+    "Lights" : {
+      "Bathroom" : {
+        "icon" : "http://www.freeiconspng.com/uploads/toilet-icon-png-4.png",
+        "pin_number" : 5,
+        "value" : 0
+      },
+      "Bedroom1" : {
+        "icon" : "https://openclipart.org/image/2400px/svg_to_png/129925/1301476335.png",
+        "pin_number" : 7,
+        "value" : 1
+      },
+      "Bedroom2" : {
+        "icon" : "https://openclipart.org/image/2400px/svg_to_png/129925/1301476335.png",
+        "pin_number" : 11,
+        "value" : 0
+      },
+      "Kitchen" : {
+        "icon" : "http://www.clipartpal.com/_thumbs/pd/household/kitchen/cooking_icon.png",
+        "pin_number" : 3,
+        "value" : 1
+      },
+      "Livingroom" : {
+        "icon" : "http://lonestarmaidservice.com/wp-content/uploads/2015/06/living-room-icon.png?26b9b1",
+        "pin_number" : 13,
+        "value" : 1
+      }
+    },
+    "Sensors" : {
+      "Humidity" : {
+        "current_inside" : "83.10%",
+        "max_inside" : "96.10%",
+        "min_inside" : "37.30%"
+      },
+      "Temperature" : {
+        "current_inside" : "21.00C",
+        "max_inside" : "27.20C",
+        "min_inside" : "19.00C"
+      }
+    }
+  },
+  "PI" : {
+    "CPU" : {
+      "temperature" : "42.2"
+    },
+    "DISK" : {
+      "free" : "3.6",
+      "percentage" : "13%",
+      "total" : "29",
+      "used" : "25.4"
+    },
+    "RAM" : {
+      "free" : "417.0",
+      "total" : "948.0",
+      "used" : "530.0"
+    }
+  },
+  "Settings" : {
+    "info_update_time_interval" : "600",
+    "last_update_datetime" : "09/10/2016 23:04:32",
+    "pi_address" : "YOUR_LOCAL_PI_ADDRESS",
+    "pi_external_address" : "YOUR_EXTERNAL_PI_ADDRESS"
+  }
+}
