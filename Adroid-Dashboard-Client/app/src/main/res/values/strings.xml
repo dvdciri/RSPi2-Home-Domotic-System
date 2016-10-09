@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dashboard</string>
+
+    <string name="pref_pi_address_key">pref_pi_address_key</string>
+    <string name="pref_last_update_datetime">pref_last_update_datetime</string>
+    <string name="pref_info_update_interval">pref_info_update_interval</string>
+    <string name="pref_is_in_local_lan">pref_is_in_local_lan</string>
+
+    <string name="last_update_string">Last update: %s</string>
+    <string name="cpu_temperature_string">CPU Temperature: %1$s °C (%2$s)</string>
+</resources>

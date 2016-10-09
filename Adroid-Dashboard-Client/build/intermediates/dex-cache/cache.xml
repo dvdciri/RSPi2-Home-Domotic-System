@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.5/571f4e0451db64a7b41dbeb5f2503986fe5acdb4/dagger-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="571f4e0451db64a7b41dbeb5f2503986fe5acdb4">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/dagger-2.5_d2633b3e31a93c08d773f012c77ae67fc1a52a9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/converter-gson/2.0.0-beta2/392c3d09e0f5e7087544093cc0cb23bb9c7af5fa/converter-gson-2.0.0-beta2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="392c3d09e0f5e7087544093cc0cb23bb9c7af5fa">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/converter-gson-2.0.0-beta2_14eaf89633fa248795709aa58d365fcd0cc017de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.0-beta1/54d65d51b5ebec588a19b2384efb6395b5bf5b18/MPAndroidChart-v3.0.0-beta1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="54d65d51b5ebec588a19b2384efb6395b5bf5b18">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v3.0.0-beta1_d86743342eb98fdf2657b6527d2420ba1a4da53e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.3.0_280a78d878971c88fc81c4bd18c15a25ffd66151.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_0af3cceaaa96acd553ac92d0bf9d6344acd5c115.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d4ab8678882571a0a6f19c47a826ecbce5b4f42b">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.1.0_74d9c8c56df47257a8a338744cd96d421fa57559.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/adapter-rxjava/2.0.0-beta2/3a233746381a03dbb0f5f3ed10b11c3e72dba499/adapter-rxjava-2.0.0-beta2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3a233746381a03dbb0f5f3ed10b11c3e72dba499">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.0.0-beta2_dcf4a8c4552ed0bd106cc0873cfe48629e92f294.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.2.2_2ddc484a2bdaa8494f6e1c9a111e8d83fbce3758.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.3.1/be29b24233711c419ce935aa0a1b12ebc49d1c9a/firebase-client-android-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/firebase-client-android-2.3.1_11281b15b9235f21f0b21aad564474250fac3fd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_1b2e4136a872f3750b392b557b9b692e5a766722.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_0e3f94cb529b24039eb31153fe20676bf945dddc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.3.0_83a14468f747adee923fdb28c24b797c6af16489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.3.0_aa364ae63c733b6e7803d376f49c893c5eff2dd2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/javax.inject-1_0d0655ad06a56efb8a60e70c859b25f984615399.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.3.0_a17a7aa3516729c0355cddc89f3bf5ad8cb5a480.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.11/d37cb67277928cf59344b4196af8d9cee1f1a27c/tubesock-0.0.11.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/tubesock-0.0.11_9ed43301272af71bb80c074c1825a12dce5c1a1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/2.0.0-beta2/880d9e0997b2d1bfc98e0d121ced33ee5d04aac4/retrofit-2.0.0-beta2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="880d9e0997b2d1bfc98e0d121ced33ee5d04aac4">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/retrofit-2.0.0-beta2_010c29e1fd1a8020f8bf5a76c39eb7da41289718.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="aa81bfe8c5cc88c2472ca936ae71f0c3dd1766df">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.0.1_3bd866dfadca846160bf1851dc8138c082a90cc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/gson-2.3.1_2fd2ebc21e3a2cf7151f17b10a047e353e099e72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_12914cdb5d335e0b11af4cef767d605b11db0b0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/jackson-databind-2.2.2_0e68ae29202dda022311fc6a92870b09dfaf2b3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/logging-interceptor/2.6.0/77dc6e1eedd47953b41ef936f20b9b693fe73f6f/logging-interceptor-2.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="77dc6e1eedd47953b41ef936f20b9b693fe73f6f">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/logging-interceptor-2.6.0_4f10656488fb8153d9e45e8aa1b231eb4aef366d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_9e39ec0372af28ed81bfa2210473580749ef1fb7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_cbbed2f5715aee35e55683245df989431ead1d06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_60e2162c620850db52967d02c15618b252c3e082.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.6.0/212387a39088ecd3daff8e3bfc3bdc4123e33c67/okhttp-2.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="212387a39088ecd3daff8e3bfc3bdc4123e33c67">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/okhttp-2.6.0_6a8b9b1714c955eb51b4ec7de3594c061968b883.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/okio-1.9.0_5aa07cd4ac92da37f89d63cb58f66c0507f40b6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/firebase-client-jvm-2.3.1_9a9f01975a5a2d741145260ac233b992986d84c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.3.0_37e4f3a40350fa79d015096a1bff8c41dc2186c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.1.0/d6854f42bfb4098d3d2358d93201307b9f1cc95d/butterknife-annotations-8.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d6854f42bfb4098d3d2358d93201307b9f1cc95d">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.1.0_413405b58d30268e38a2220eed3f3fe2c0397c13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.14/898f9ab61e2a23afd615f0b0389478bec86f49f9/rxjava-1.0.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="898f9ab61e2a23afd615f0b0389478bec86f49f9">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/rxjava-1.0.14_1beda5b6c292f05c9c9489defce6bb965ab3cddf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/davidecirillo/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/Users/davidecirillo/Davide/StudioProjects/Dashboard/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.2_d3c058ad4ffc58c24a265f918e6031074804cf9b.jar" />
+    </item>
+
+</items>
