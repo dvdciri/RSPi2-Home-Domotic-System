@@ -2,21 +2,37 @@
 import RPi.GPIO as GPIO
 from time import sleep
 import datetime
-
-import urllib2, urllib, httplib
+from firebase import firebase
 import pigpio
 import DHT22
+import urllib2, urllib, httplib
+import json
 import os 
-GPIO.setmode(GPIO.BOARD)
+from functools import partial
+
+# Global variables
+LOGGER = 1
+buttonTest = 23
+sensor_pin_number = 21;
+firebase = firebase.FirebaseApplication('https://dashmotic.firebaseio.com', None)
 
 
-#============================================================================
+# LOGGER
+def printlog(text):
+    if(LOGGER):
+        print(text)
+# LOGGER
+
+
+# Start script
+# ============================================================================
+printlog("Script Started\n")
+
 #Information about temperature, humidity, cpu, disk, RAM
-
 # Initiate GPIO for pigpio
 pi = pigpio.pi()
 # Setup the sensor
-dht22 = DHT22.sensor(pi, 21) # gpio pin name for sensor
+dht22 = DHT22.sensor(pi, sensor_pin_number)
 dht22.trigger()
 
 
@@ -28,7 +44,6 @@ def readDHT22():
     temp = '%.2f' % (dht22.temperature())
 
     return (humidity, temp)
-
 
 # Return CPU temperature as a character string                                      
 def getCPUtemperature():
@@ -71,13 +86,9 @@ def getDiskSpace():
 dateString = '%d/%m/%Y %H:%M:%S'
 
 
-##Main function used to update al the informations
-def updatePIInfo():
-        
-    from firebase import firebase
-    firebase = firebase.FirebaseApplication('https://dashmotic.firebaseio.com', None)
+def updatePiInfo():
 
-    print(datetime.datetime.now().strftime(dateString))
+    printlog("## Updating Firebase Info.. ##")
     firebase.put("/Settings", "/last_update_datetime", datetime.datetime.now().strftime(dateString))
 
     ##retrive max & min humidity (remove the %)
@@ -102,27 +113,23 @@ def updatePIInfo():
     ##check for max values
     if float(humidity) > float(maxHumidity):
         firebase.put("/Controls/Sensors", "/Humidity/max_inside", ""+humidity+"%")
-        print("Updating Humidity max_inside")
+        printlog("Updated Humidity max_inside")
     if float(temperature) > float(maxTemperature):
         firebase.put("/Controls/Sensors", "/Temperature/max_inside", ""+temperature+"C")
-        print("Updating Temperature max_inside")
+        printlog("Updated Temperature max_inside")
         
     ## cehck for min values
     if float(humidity) < float(minHumidity):
         firebase.put("/Controls/Sensors", "/Humidity/min_inside", ""+humidity+"%")
-        print("Updating Humidity min_inside")
+        printlog("Updated Humidity min_inside")
     if float(temperature) < float(minTemperature):
         firebase.put("/Controls/Sensors", "/Temperature/min_inside", ""+temperature+"C")
-        print("Updating Temperature min_inside")
-
-    print("Humidity: Current["+humidity+"], Max["+maxHumidity+"], Min["+minHumidity+"]")
-    print("Temperature: Current["+temperature+"], Max["+maxTemperature+"], Min["+minTemperature+"]")
+        printlog("Updated Temperature min_inside")
 
     #CPU INFO
     CPU_temp = getCPUtemperature()
     CPU_usage = getCPUuse()
     firebase.put("/PI/CPU", "/temperature", CPU_temp)
-    print("CPU temperature: "+CPU_temp)
 
     #RAM INFO
     RAM_stats = getRAMinfo()
@@ -132,7 +139,6 @@ def updatePIInfo():
     firebase.put("/PI/RAM", "/free", str(RAM_free)+"")
     firebase.put("/PI/RAM", "/used", str(RAM_used)+"")
     firebase.put("/PI/RAM", "/total", str(RAM_total)+"")
-    print("RAM total["+str(RAM_total)+" MB], RAM used["+str(RAM_used)+" MB], RAM free["+str(RAM_free)+" MB]")
 
     #DISK INFO
     DISK_stats = getDiskSpace()
@@ -144,29 +150,63 @@ def updatePIInfo():
     firebase.put("/PI/DISK", "/free", str(DISK_free[:-1]))
     firebase.put("/PI/DISK", "/used", str(DISK_used))
     firebase.put("/PI/DISK", "/percentage", str(DISK_perc))
-    print("DISK total["+str(DISK_total)+"], free["+str(DISK_free)+"], perc["+str(DISK_perc)+"]")
-    print("======================================================")
 
+
+    printlog(datetime.datetime.now().strftime(dateString))
+    printlog("Humidity: Current["+humidity+"], Max["+maxHumidity+"], Min["+minHumidity+"]")
+    printlog("Temperature: Current["+temperature+"], Max["+maxTemperature+"], Min["+minTemperature+"]")
+    printlog("CPU temperature: "+CPU_temp)
+    printlog("RAM total["+str(RAM_total)+" MB], RAM used["+str(RAM_used)+" MB], RAM free["+str(RAM_free)+" MB]")
+    printlog("DISK total["+str(DISK_total)+"], free["+str(DISK_free)+"], perc["+str(DISK_perc)+"]")
+    printlog("## Update finished successfully ##")
+    printlog("======================================================\n")
+
+
+
+
+# ============================================================================================
+# GPIO CALLBACKS FOR PHYSICAL BUTTONS
+GPIO.setmode(GPIO.BOARD)
+
+switch_number_key = 'switch_number'
+pin_number_key = 'pin_number'
+
+def toggleControlChild(name, pin_number, control_type, channel):
+    # First switch on/off the light in relation of the gpio state
+    GPIO.setup(pin_number, GPIO.OUT)
+    value = GPIO.input(pin_number)
+    newValue = int(not value)
+    GPIO.output(pin_number, newValue)
+
+    # Then update firebase with the new state
+    firebase.put("/Controls/"+control_type+"/"+name, "/value", newValue)
+
+
+
+# Fetch firebase switch data
+controls = firebase.get('/Controls', None)
+
+for cat_name, cat_value in controls.items():
+    for control_name, control_value in cat_value.items():
+        if control_value.get(switch_number_key) != None or control_value.get(switch_number_key) is not None:
+            # Set up IN gpio pin for switch
+            switch_number = control_value.get(switch_number_key)
+            GPIO.setup(switch_number, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+            # register callback for each switch retrieved
+            GPIO.add_event_detect(switch_number, GPIO.BOTH, callback=partial(toggleControlChild, control_name, control_value.get(pin_number_key), cat_name), bouncetime=1000)
 
 
 while True:
-
     try:
+        updatePiInfo()
+        print("")
 
-        updatePIInfo()
-
+        #Retrieve sleep time from firebase and continue the loop
+        sleepTime = firebase.get("/Settings/info_update_time_interval", None)
+        sleepTime = int(sleepTime)
+        sleep(sleepTime)
     except:
-	print("=!=!=!=!=!=!=!=!= EXCEPTION RAISED NOW =!=!=!=!=!=!=!=!=!!=!=!=!=!") 
         continue
-
-    #Retrieve sleep time from firebase and continue the loop
-    from firebase import firebase
-    firebase = firebase.FirebaseApplication('https://dashmotic.firebaseio.com', None)
-    sleepTime = firebase.get("/Settings/info_update_time_interval", None)
-    sleepTime = int(sleepTime)
-    sleep(sleepTime)
-
-
 
 
 
